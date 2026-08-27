@@ -67,13 +67,7 @@ Make sure the project name itself is selected before adding the existing propert
 
 5: Run code test:
 
-GLFW/GLEW/GLM Test:
-
-Add opengl_example/helloworld.cpp provided by LearnOpenGL into your project
-
-NanoGui Test:
-
-Add nanogui_example/example3.cpp provided by NanoGUI into your project
+go to Assignment 0 repository and download the source files: https://github.com/rrfeng1184/Asst_0_HelloTriangle
 
 Done
 
