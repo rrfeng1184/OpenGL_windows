@@ -2,7 +2,7 @@ GLFW/GLEW/GLM/Freeglut/AntTweakBar and NanoGUI configuration
 
 This is a windows version of GLFW/GLEW/GLM/FreeGLUT/AntTweakBar and nanogui binary file collection.
 
-This version is ONLY used for Visual Studio 2019 Release(Debug)/x64 mode (Probabily it is also compatible for VS2015 and VS2017).
+This version is compatible with Visual Studio 2022 Release(Debug)/x64 mode.
 
 For other versions of binary file, you can compile it on your own using cmake-gui windows version
 
@@ -10,25 +10,31 @@ For other versions of binary file, you can compile it on your own using cmake-gu
 
 <b> Do This In Order </b>
 
+0: Download "openGL.zip"; create a new folder and upzip in the folder. 
+
+e.g. create a folder under your C drive, Program Files directory: 
+        C:\Program Files\opengl
+        unzip all files into this folder. 
+        
 1: Add this folder into your system variables with:
 
 Variable name: OPENGL
 
-Variable value: This repo that you just downloaded
+Variable value: This repo that you just downloaded in step 0
 ```
 e.g.  
     Variable name: OPENGL
-    Variable value: D:\Program Files\opengl
+    Variable value: C:\Program Files\opengl
 ```
 
 2: Add dll folder to your system's "Path":
 ```
 e.g. 
     Variable name: Path
-    Variable value: D:\Program Files\opengl\dll
+    Variable value: C:\Program Files\opengl\dll
 ```
 
-2: Create your own empty project in Visual Studio 2019
+2: Create your own empty project in Visual Studio 2022 
 
 3: Add each OPENGL.prop + NANOGUI.prop files into Visual Studio Property Manager（Release/Debug x64）:
 (If you are using freeglut or antweakbar you can add it seperately, but do not put them all together with GLFW. It may cause some error when running the code)
